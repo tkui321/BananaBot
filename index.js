@@ -37,7 +37,7 @@ client.on("message", (message) => {
     }});
   } else
   if (message.content === (prefix + "invite")) {
-    message.author.sendMessage("**__Invite The Bot:__**\n \nhttps://discordapp.com/api/oauth2/authorize?client_id=423111730378440714&permissions=8&scope=bot");
+    message.channel.sendMessage("**__Invite The Bot:__**\n \nhttps://discordapp.com/api/oauth2/authorize?client_id=423111730378440714&permissions=8&scope=bot");
     message.reply("Please check your direct messages :mailbox_with_no_mail:");
   } else
   if (message.content === (prefix + "staff")) {
@@ -51,10 +51,9 @@ client.on("message", (message) => {
           text: "Banana Server"
       }
     }});
-     message.reply(":mailbox_with_no_mail: תבדוק את ההודעות הפרטיות שלך");
   } else
   if (message.content === (prefix + "roles")) {
-    message.author.sendMessage({embed: {
+    message.channel.sendMessage({embed: {
       color: 3447003,
       title: "__:הרולים של בננה סרבר__\n \n",
       description: "** **\n**Banana [B]**\n**OWNER [O]**\n**CO [C]**\n**ADMIN+ [A+]**\n**ADMIN [A]**\n**MOD [M]**\n**Helper [H]**\n**Friend [F]**\n**Mvp+**\n**Mvp**\n**Vip+**\n**Vip**\n**Bot [B]**\n**משהו מגנב XD**\n**YouTuber**\n**Member**\n**Muted**\n**Minecraft Player**\n**CS-GO Player**\n**Fortnite Player**\n**PUBG Player**\n**OverWatch Player**\n**צריך גישות ליצור חדרים**\n**Staff**\n**צריך לתכנת משהו**",
@@ -64,7 +63,6 @@ client.on("message", (message) => {
           text: "Banana Server"
       }
     }});
-     message.reply(":mailbox_with_no_mail: תבדוק את ההודעות הפרטיות שלך");
    }
  });
 
