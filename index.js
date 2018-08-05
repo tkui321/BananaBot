@@ -41,7 +41,7 @@ client.on("message", (message) => {
     message.reply("Please check your direct messages :mailbox_with_no_mail:");
   } else
   if (message.content === (prefix + "staff")) {
-    message.author.sendMessage({embed: {
+    message.channel.sendMessage({embed: {
       color: 3447003,
       title: "__:צוות השרת שלנו__\n \n",
       description: "** **\n**Banana** - 🍌Banana🍌#9845 , Banana Bot#1425\n**OWNER** - Derpy [MIG]#6522 , 𝓕𝓐𝓡𝓘𝓓𝓝𝓘𝓖𝓔𝓜 [MIG]#7296\n**CO** -\n**ADMIN+** -\n**ADMIN** -\n**MOD** - ☆WANE☆#6700\n**HELPER** -",
