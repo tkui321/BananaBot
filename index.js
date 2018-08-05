@@ -25,7 +25,7 @@ client.on("message", (message) => {
     }});
   } else
   if (message.content === (prefix + "help")) {
-    message.author.sendMessage({embed: {
+    message.channel.sendMessage({embed: {
       color: 0xffff00,
       title: "__:הפקודות של בננה סרבר__\n \n",
       description: "** **\n**/ping** - מראה לך כמה פינג יש לך\n**/discord** - הקישור לדיסקורד\n**/test** - מראה לך אם הבוטית פועלת\n**/roles** - מראה לך את הרולים של הסרבר\n**/staff** - מראה לך איזה אנשים נמצאים בצוות שלנו\n**/help** - מראה לך את התפריט הזה",
@@ -35,7 +35,6 @@ client.on("message", (message) => {
           text: "Banana Server"
       }
     }});
-     message.reply(":mailbox_with_no_mail: תבדוק את ההודעות הפרטיות שלך");
   } else
   if (message.content === (prefix + "invite")) {
     message.author.sendMessage("**__Invite The Bot:__**\n \nhttps://discordapp.com/api/oauth2/authorize?client_id=423111730378440714&permissions=8&scope=bot");
